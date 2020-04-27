@@ -16,6 +16,7 @@
 </style>
 <body>
 用户编号：<input type="number" id="userId" value="0">
+房间编号：<input type="number" id="room" value="0"> <input type="button" value="新建房间" onclick="newRoom()">
 <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse">
     <thead>
     <tr>
@@ -40,6 +41,12 @@
     function enter(roomName) {
         var userId = $("#userId").val();
         window.location.href = "http://192.168.0.82:8888/mqtt/" + roomName + "/" + userId;
+    }
+
+    function newRoom() {
+        var userId = $("#userId").val();
+        var room = $("#room").val();
+        window.location.href = "http://192.168.0.82:8888/mqtt/" + room + "/" + userId;
     }
 </script>
 </html>
