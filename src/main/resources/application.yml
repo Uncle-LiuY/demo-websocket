@@ -1,0 +1,22 @@
+server:
+  port: 8888
+spring:
+  thymeleaf:
+    cache: true
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+mqtt:
+  url: tcp://112.124.15.164:1883
+  #MQTT-连接服务器默认客户端ID
+  clientinid: subClient_admin
+  #MQTT-默认的消息推送主题，实际可在调用接口时指定
+  topic: test/system
+  username: test
+  password: test
+  timeout: 5
+  keepalive: 50
+
