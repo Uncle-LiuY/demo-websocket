@@ -93,7 +93,7 @@ function exit() {
     client.send(message);
     //发送disconnect报文后不能再通过该连接发送任何控制报文
     client.disconnect();
-    window.history.go(-1);
+    window.location.href=document.referrer;
     subtract(destinationName);
 }
 
