@@ -3,7 +3,7 @@ var clientUserId = $("#userId").val();
 //房间名
 var roomName = $("#roomName").val();
 
-var hostname = '112.124.15.164',
+var hostname = 'ip',
     port = 9001, //websocket 端口
     clientId = 'client-count-' +roomName+ clientUserId,
     timeout = 5,
